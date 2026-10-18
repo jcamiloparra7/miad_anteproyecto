@@ -87,8 +87,6 @@ Para desarrollar el proyecto se han identificado los siguientes recursos:
 
 ### Tiempo estimado
 
-### Tiempo estimado
-
 El desarrollo del proyecto se estima en 12 semanas, distribuidas entre la preparación de los datos, el análisis exploratorio, la construcción y evaluación de los modelos y el desarrollo de la herramienta de visualización y seguimiento.
 
 Durante las primeras semanas se revisará la disponibilidad de información y se definirá la metodología para identificar los eventos históricos de *distress*. Posteriormente, se construirá el índice de vulnerabilidad soberana externa y, dependiendo de la cantidad y calidad de los eventos identificados, se desarrollará el componente predictivo. Finalmente, se integrarán los resultados en una herramienta que permita comparar países, consultar sus principales indicadores y visualizar las alertas generadas.
@@ -111,10 +109,13 @@ En el contexto del proyecto académico, la autoridad final se asimila al patroci
 
 ### Enunciado del problema de negocio
 
-**Mejoraremos** la priorización del monitoreo soberano externo y la identificación temprana de países con señales de vulnerabilidad y distress.  
-**Para** una unidad de riesgo soberano / exposición país de un banco multilateral de desarrollo.  
-**El usuario o cliente lidia hoy** con señales dispersas, comparabilidad limitada entre países y escalamiento reactivo frente a episodios de presión externa.  
-**Al resolver esto, se impactará positivamente el negocio** porque se reducirá la discrecionalidad del monitoreo, se optimizará el uso del esfuerzo analítico y se mejorará la oportunidad de revisión de exposición.
+**Mejoraremos:** la identificación y el seguimiento de países con vulnerabilidad soberana externa, incorporando herramientas analíticas que permitan reconocer señales de deterioro y estimar el riesgo de episodios de dificultades de pago (*distress*).
+
+**Para:** equipos encargados del análisis macroeconómico y la evaluación del riesgo soberano en organismos multilaterales de desarrollo, tomando como referencia al Banco Interamericano de Desarrollo (BID).
+
+**El usuario o cliente enfrenta:** la necesidad de analizar múltiples indicadores económicos y financieros para evaluar la situación de los países. Aunque esta información está disponible en diferentes fuentes, identificar patrones de vulnerabilidad y relacionarlos con episodios históricos de dificultades de pago requiere un análisis integrado.
+
+**Al resolver este problema, se espera:** aportar evidencia que permita distinguir los países con mayores vulnerabilidades, identificar factores asociados con posibles dificultades de pago y establecer prioridades de seguimiento. Esto facilitaría un análisis preventivo del riesgo soberano, sin reemplazar las evaluaciones realizadas por especialistas.
 
 ---
 
