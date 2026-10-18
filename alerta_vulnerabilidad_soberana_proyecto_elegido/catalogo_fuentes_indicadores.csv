@@ -1,0 +1,24 @@
+source_group,source_id,source_name,frequency,indicator_code,indicator_name,dimension,analytical_role,proposed_use,notes
+core_macro,2,WDI,annual,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),actividad real,feature,Señal de desaceleración o contracción,Parte del núcleo macro
+core_macro,2,WDI,annual,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",estabilidad nominal,feature,Captura presión inflacionaria,Parte del núcleo macro
+core_macro,2,WDI,annual,BN.CAB.XOKA.GD.ZS,Current account balance (% of GDP),sector externo,feature,Mide desequilibrio externo,Parte del núcleo macro
+core_macro,2,WDI,annual,FI.RES.TOTL.CD,"Total reserves (includes gold, current US$)",liquidez externa,feature,Colchón externo ante choques,Usar junto con variables de deuda
+core_macro,2,WDI,annual,SL.UEM.TOTL.ZS,"Unemployment, total (% of total labor force) (modeled ILO estimate)",mercado laboral,feature,Señal de deterioro interno,Complemento del riesgo externo
+core_macro,2,WDI,annual,BX.KLT.DINV.WD.GD.ZS,"Foreign direct investment, net inflows (% of GDP)",financiamiento externo,feature,Dependencia de flujos de capital,Explica resiliencia externa
+core_macro,2,WDI,annual,FM.LBL.BMNY.GD.ZS,Broad money (% of GDP),profundidad monetaria,feature,Proxy de liquidez doméstica,Complemento del score
+core_macro,3,WGI,annual,GOV_WGI_GE.SC,Government Effectiveness - Governance score (0-100),institucionalidad,feature,Capacidad institucional para gestionar choques,Control estructural
+external_liquidity,2,WDI,annual,FI.RES.TOTL.MO,Total reserves in months of imports,liquidez externa,feature,Cobertura de importaciones,Variable prioritaria del score
+external_liquidity,2,WDI,annual,FI.RES.TOTL.DT.ZS,Total reserves (% of total external debt),liquidez externa,feature,Cobertura de deuda externa,Variable prioritaria del score
+external_debt,6,IDS,annual,DT.DOD.DECT.GN.ZS,External debt stocks (% of GNI),stock de deuda,feature,Carga agregada de deuda externa,Variable prioritaria del score
+external_debt,2,WDI,annual,DT.TDS.DECT.EX.ZS,"Total debt service (% of exports of goods, services and primary income)",servicio de deuda,feature,Presión de pagos sobre divisas,Variable prioritaria del score
+external_debt,6,IDS,annual,DT.INT.DECT.EX.ZS,Interest payments on external debt (% of exports of goods, services and primary income),carga financiera,feature,Carga de intereses externos,Variable prioritaria del score
+external_debt,6,IDS,annual,DT.INT.DECT.GN.ZS,Interest payments on external debt (% of GNI),carga financiera,feature,Presión de intereses sobre la economía,Variable prioritaria del score
+external_debt,2,WDI,annual,DT.DOD.DSTC.ZS,Short-term debt (% of total external debt),refinanciamiento,feature,Riesgo de rollover,Variable prioritaria del score
+external_debt,6,IDS,annual,DT.INR.DPPG,Average interest on new external debt commitments (%),costo financiero,feature,Costo promedio de nueva deuda externa,Variable prioritaria del score
+external_debt,6,IDS,annual,DT.MAT.DPPG,Average maturity on new external debt commitments (years),perfil de vencimiento,feature,Espacio de refinanciamiento,Variable prioritaria del score
+distress_proxy,6,IDS,annual,DT.AXA.DLXF.CD,Principal arrears on external debt long-term (current US$),distress,proxy_label,Atrasos en principal,Usar para construir etiqueta supervisada
+distress_proxy,6,IDS,annual,DT.IXA.DLXF.CD,Interest arrears on external debt long-term (current US$),distress,proxy_label,Atrasos en intereses,Usar para construir etiqueta supervisada
+distress_proxy,6,IDS,annual,DT.IXR.DPPG.CD,Interest rescheduled (capitalized) on PPG debt (current US$),distress,proxy_label,Reprogramación o restructuración,Usar para construir etiqueta supervisada
+distress_proxy,6,IDS,annual,DT.IXF.DPPG.CD,Interest forgiven on PPG debt (current US$),distress,proxy_label,Alivio o evento severo,Usar para construir etiqueta supervisada
+monthly_monitoring,15,GEM,monthly,DPANUSLCU,"Official exchange rate, LCU per USD, period average",presión cambiaria,monitoring,Seguimiento mensual de deterioro,Trigger de watchlist
+monthly_monitoring,15,GEM,monthly,TOTRESV,Total Reserves,liquidez externa,monitoring,Seguimiento mensual de reservas,Trigger de watchlist
