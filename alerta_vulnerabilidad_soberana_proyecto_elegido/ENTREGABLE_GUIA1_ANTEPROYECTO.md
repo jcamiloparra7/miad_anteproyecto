@@ -87,7 +87,13 @@ Para desarrollar el proyecto se han identificado los siguientes recursos:
 
 ### Tiempo estimado
 
-La propuesta es factible como capstone porque puede organizarse en un MVP con horizonte de 10 a 12 semanas: definición, carga y limpieza, análisis exploratorio, construcción de score, clasificación supervisada, diseño del semáforo y documentación final.
+### Tiempo estimado
+
+El desarrollo del proyecto se estima en 12 semanas, distribuidas entre la preparación de los datos, el análisis exploratorio, la construcción y evaluación de los modelos y el desarrollo de la herramienta de visualización y seguimiento.
+
+Durante las primeras semanas se revisará la disponibilidad de información y se definirá la metodología para identificar los eventos históricos de *distress*. Posteriormente, se construirá el índice de vulnerabilidad soberana externa y, dependiendo de la cantidad y calidad de los eventos identificados, se desarrollará el componente predictivo. Finalmente, se integrarán los resultados en una herramienta que permita comparar países, consultar sus principales indicadores y visualizar las alertas generadas.
+
+El alcance definitivo del componente predictivo dependerá de los resultados de la exploración inicial de los datos.
 
 ### Autoridad final
 
