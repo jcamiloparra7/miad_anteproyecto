@@ -236,6 +236,42 @@ El beneficio esperado no consiste en sustituir los modelos o procedimientos que 
 
 ## Parte VI. Criterios de éxito
 
+El proyecto se considerará exitoso si logra desarrollar una herramienta que permita evaluar la vulnerabilidad soberana externa de los países, identificar los factores asociados con su nivel de riesgo y generar alertas que aporten información útil para priorizar el seguimiento.
+
+### Criterios de éxito del producto
+
+1. Contar con un índice de vulnerabilidad soberana externa que permita comparar los países seleccionados y analizar su evolución histórica.
+2. Identificar los principales indicadores económicos y financieros que contribuyen a la evaluación de vulnerabilidad de cada país.
+3. Integrar los resultados en una herramienta que permita consultar los niveles de riesgo, las alertas y sus principales factores explicativos.
+4. Incorporar un componente predictivo de distress si la disponibilidad y calidad de los datos permiten desarrollarlo y validarlo adecuadamente.
+
+### Criterios de éxito analítico
+
+- Evaluar la capacidad del sistema para identificar anticipadamente episodios históricos de distress.
+- Comparar el desempeño predictivo frente a un modelo de referencia mediante métricas como PR-AUC y Recall@top 25 %.
+- Medir la frecuencia de falsas alarmas para evaluar la utilidad de las alertas.
+- Comprobar la estabilidad e interpretabilidad de los resultados obtenidos.
+- Realizar la evaluación sobre períodos históricos posteriores a los utilizados para entrenar los modelos, evitando incorporar información que no estuviera disponible en el momento de cada predicción.
+
+### Criterios de éxito del proyecto
+
+- Cumplir los entregables y las actividades establecidos en el cronograma.
+- Construir una base de datos documentada y reproducible.
+- Desarrollar y evaluar el índice de vulnerabilidad soberana externa.
+- Documentar los resultados, supuestos y limitaciones de los modelos utilizados.
+- Entregar una herramienta funcional que permita consultar los resultados del análisis.
+
+### Métricas de seguimiento durante la ejecución
+
+| Dimensión | Indicador de seguimiento |
+|---|---|
+| Datos | Porcentaje de indicadores recopilados y validados frente al catálogo definido |
+| Desarrollo | Porcentaje de actividades completadas según el cronograma |
+| Modelado | Porcentaje de componentes analíticos desarrollados y evaluados |
+| Calidad | Porcentaje de variables documentadas con fuente, definición y tratamiento |
+| Producto | Porcentaje de funcionalidades implementadas y verificadas |
+## Parte VI. Criterios de éxito
+
 El proyecto se considerará exitoso si cumple simultáneamente criterios de negocio, analíticos y de ejecución.
 
 ### Criterios de éxito del producto
@@ -272,9 +308,11 @@ El proyecto se considerará exitoso si cumple simultáneamente criterios de nego
 
 ## Parte VII. Contexto
 
-El Banco Interamericano de Desarrollo es un buen stakeholder para este caso porque su misión de desarrollo convive con la necesidad de monitorear sostenibilidad macroeconómica y capacidad de ejecución de los países miembros. A diferencia de un inversionista de mercado puro, una entidad como el BID obtiene valor de una herramienta que prioriza monitoreo y apoyo técnico, no solamente de una señal de compra o venta. Además, el foco regional en América Latina combina naturalmente con el universo principal propuesto, mientras que los comparadores emergentes externos aportan contexto sin desdibujar el usuario principal.
+El Banco Interamericano de Desarrollo (BID) es una institución financiera multilateral que promueve el desarrollo económico y social de América Latina y el Caribe. Por la naturaleza de sus operaciones, el seguimiento de las condiciones macroeconómicas y financieras de los países es relevante para evaluar riesgos asociados con su endeudamiento y capacidad de pago.
 
-Dentro de ese contexto, la unidad de riesgo soberano o exposición país necesita información comparable, oportuna y defendible para discutir con equipos sectoriales, equipos país y comités internos. El proyecto se inserta precisamente en ese punto: no reemplaza la evaluación cualitativa, pero sí organiza el monitoreo con una capa objetiva y trazable.
+El proyecto toma al BID como organización de referencia para desarrollar una herramienta que combine el análisis de vulnerabilidad soberana externa con la identificación de señales que puedan anticipar episodios de dificultades de pago (*distress*). Mediante indicadores de deuda, reservas internacionales y condiciones macroeconómicas, se busca generar información comparable que permita identificar países que requieren mayor seguimiento.
+
+La solución tendrá un alcance académico y utilizará información pública. Su aplicación institucional requeriría validación posterior con especialistas.
 
 ---
 
