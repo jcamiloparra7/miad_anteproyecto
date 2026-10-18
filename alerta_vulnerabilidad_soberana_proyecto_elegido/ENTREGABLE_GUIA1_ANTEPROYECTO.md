@@ -95,17 +95,17 @@ El alcance definitivo del componente predictivo dependerá de los resultados de 
 
 ### Autoridad final
 
-En el contexto del proyecto académico, la autoridad final se asimila al patrocinio de una **unidad de riesgo soberano / exposición país del BID**, apoyada por el asesor del proyecto y validada por los criterios de la guía.
+La aprobación del proyecto corresponde al ámbito académico, de acuerdo con los criterios establecidos por el curso y su asesor. El equipo de cuatro estudiantes será responsable de las decisiones metodológicas y del desarrollo de la solución. El BID se utilizará como organización de referencia, sin participación formal en la aprobación.
 
 ### Dinámica de las 5W
 
 | Pregunta | Respuesta |
 |---|---|
-| **Who** | El stakeholder primario es la unidad de riesgo soberano / exposición país del BID. También participan equipos país, comité de riesgo y tesorería. |
-| **What** | Se busca resolver la falta de una herramienta integrada, comparable y temprana para priorizar países con mayor vulnerabilidad soberana externa. |
-| **Where** | El problema ocurre en el proceso de monitoreo y revisión de exposición país de una entidad multilateral con foco en América Latina y benchmarking frente a otros emergentes. |
-| **When** | El problema aparece cada vez que se debe asignar capacidad analítica, preparar comités, revisar cupos o responder a señales macrofinancieras cambiantes. |
-| **Why** | Porque el monitoreo reactivo genera tardanza, heterogeneidad y menor trazabilidad en decisiones que afectan exposición, seguimiento y diálogo con países. |
+| **Who** | Equipos de análisis macroeconómico y riesgo soberano de entidades multilaterales, tomando al BID como referencia. |
+| **What** | Identificar países con mayor vulnerabilidad soberana externa y riesgo de dificultades de pago. |
+| **Where** | Países de América Latina y economías emergentes de comparación. |
+| **When** | Durante los ejercicios periódicos de evaluación y seguimiento del riesgo soberano. |
+| **Why** | Para integrar indicadores económicos y financieros, identificar señales de deterioro y priorizar análisis preventivos. |
 
 ### Enunciado del problema de negocio
 
@@ -130,7 +130,6 @@ Estas fuentes contienen información sobre deuda externa, servicio de deuda, res
 La disponibilidad de estas fuentes permite plantear una primera versión de la herramienta. Sin embargo, será necesario revisar la cobertura histórica por país, la frecuencia de actualización, los datos faltantes y la cantidad de eventos registrados antes de definir el conjunto final de variables y el alcance del modelo predictivo.
 
 El análisis de precios de mercado de la deuda soberana no forma parte del alcance inicial, debido a que las fuentes seleccionadas no ofrecen una cobertura homogénea de rendimientos, diferenciales de crédito o CDS.
-Sí existen datos suficientes para formular una primera versión del problema. La exploración previa mostró que las siguientes fuentes de WBGAPI son las más relevantes:
 
 ### Modelabilidad del problema
 
@@ -159,16 +158,6 @@ La idea inicial del proyecto consistía en desarrollar un sistema de alerta temp
 Por esta razón, se decidió concentrar el análisis en la vulnerabilidad soberana externa y el riesgo de episodios de dificultades de pago (*distress*). El proyecto tendrá dos componentes: uno orientado a evaluar las condiciones económicas y financieras que pueden hacer más vulnerable a un país, y otro dirigido a identificar patrones históricos que permitan estimar el riesgo de dificultades de pago en los siguientes 12 meses.
 
 Ambos resultados se integrarán en una herramienta de seguimiento que permita comparar países, identificar señales de deterioro y establecer prioridades de análisis. Este alcance mantiene el propósito preventivo de la propuesta original, pero lo vincula con un problema económico más específico y con resultados que pueden evaluarse mediante indicadores concretos.
-El problema se replantea desde una versión demasiado amplia o financieramente ambiciosa hacia una formulación más factible:
-
-> **Desarrollar una herramienta híbrida de alerta temprana que combine técnicas no supervisadas y supervisadas para clasificar países según su vulnerabilidad soberana externa y estimar su probabilidad de distress, generando un semáforo ampliado para priorizar monitoreo y revisión de exposición.**
-
-Esta reformulación mejora la factibilidad porque:
-
-- usa indicadores con mejor cobertura histórica;
-- evita prometer pricing de mercado sin datos de mercado;
-- permite una validación empírica más clara;
-- y mantiene una conexión directa con decisiones reales de seguimiento.
 
 ### Limitantes del proyecto
 
@@ -270,41 +259,6 @@ El proyecto se considerará exitoso si logra desarrollar una herramienta que per
 | Modelado | Porcentaje de componentes analíticos desarrollados y evaluados |
 | Calidad | Porcentaje de variables documentadas con fuente, definición y tratamiento |
 | Producto | Porcentaje de funcionalidades implementadas y verificadas |
-## Parte VI. Criterios de éxito
-
-El proyecto se considerará exitoso si cumple simultáneamente criterios de negocio, analíticos y de ejecución.
-
-### Criterios de éxito del producto
-
-1. El score y el semáforo permiten distinguir grupos de países con diferente nivel de vulnerabilidad.
-2. La capa supervisada mejora el ranking de riesgo frente a un baseline simple.
-3. El resultado es interpretable y cada alerta puede explicarse con drivers concretos.
-4. La watchlist mensual permite seguimiento posterior en países ya priorizados.
-
-### Criterios de éxito analítico
-
-- **PR-AUC** superior al baseline.
-- **Recall@top-k** suficiente para concentrar eventos en el tramo alto del ranking.
-- estabilidad de clusters o perfiles de riesgo a través del tiempo.
-- coherencia económica de factores y coeficientes.
-
-### Criterios de éxito del proyecto
-
-- cumplimiento del cronograma del MVP;
-- repositorio organizado y reproducible;
-- documentación suficiente para explicar decisiones de alcance, métodos y limitantes;
-- correspondencia clara entre problema, stakeholder, métricas y producto final.
-
-### Métricas de seguimiento durante la ejecución
-
-| Dimensión | Métrica |
-|---|---|
-| Datos | % de indicadores cargados y validados según catálogo |
-| Desarrollo | avance semanal por entregable del cronograma |
-| Modelado | número de versiones de score y clasificador comparadas |
-| Calidad | consistencia de variables, nulos, trazabilidad y documentación |
-
----
 
 ## Parte VII. Contexto
 
