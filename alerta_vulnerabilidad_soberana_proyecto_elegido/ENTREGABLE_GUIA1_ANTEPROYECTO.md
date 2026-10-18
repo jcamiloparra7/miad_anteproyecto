@@ -123,34 +123,30 @@ En el contexto del proyecto académico, la autoridad final se asimila al patroci
 
 ### Existencia y ubicación de los datos
 
+El proyecto utilizará principalmente información pública del Banco Mundial, disponible a través de sus bases de datos económicas y financieras. Entre las fuentes identificadas se encuentran los Indicadores del Desarrollo Mundial (WDI), las Estadísticas de Deuda Internacional (IDS), los Indicadores Mundiales de Gobernanza (WGI) y la base Global Economic Monitor (GEM).
+
+Estas fuentes contienen información sobre deuda externa, servicio de deuda, reservas internacionales, crecimiento económico, condiciones institucionales y otras variables que pueden contribuir al análisis de la vulnerabilidad soberana externa. Algunas también incluyen registros de atrasos, reprogramaciones y alivios de deuda, que se evaluarán como posibles aproximaciones a episodios de *distress*.
+
+La disponibilidad de estas fuentes permite plantear una primera versión de la herramienta. Sin embargo, será necesario revisar la cobertura histórica por país, la frecuencia de actualización, los datos faltantes y la cantidad de eventos registrados antes de definir el conjunto final de variables y el alcance del modelo predictivo.
+
+El análisis de precios de mercado de la deuda soberana no forma parte del alcance inicial, debido a que las fuentes seleccionadas no ofrecen una cobertura homogénea de rendimientos, diferenciales de crédito o CDS.
 Sí existen datos suficientes para formular una primera versión del problema. La exploración previa mostró que las siguientes fuentes de WBGAPI son las más relevantes:
-
-- **WDI (2):** crecimiento, inflación, cuenta corriente, reservas, reservas en meses de importación, reservas como porcentaje de deuda externa y deuda de corto plazo.
-- **WGI (3):** efectividad del gobierno como control institucional.
-- **IDS (6 / 81):** deuda externa, servicio de deuda, intereses externos, costo promedio de nueva deuda, madurez promedio de nueva deuda y variables proxy de distress como atrasos, reprogramación o condonación.
-- **GEM (15):** tipo de cambio oficial y reservas para seguimiento mensual.
-
-La revisión también permitió identificar qué no conviene usar en el MVP: algunas variables fiscales, como pagos de intereses sobre ingresos o recaudo tributario sobre PIB, tienen una cobertura más débil; y la capa de precios de mercado no está disponible con suficiente homogeneidad para formular un caso de mispricing soberano.
 
 ### Modelabilidad del problema
 
-El problema sí se puede modelar. Existe suficiente estructura para proponer un enfoque híbrido:
+El problema se abordará mediante dos componentes analíticos complementarios. El primero permitirá evaluar la vulnerabilidad soberana externa de los países a partir de indicadores económicos y financieros. Para ello, se explorarán técnicas de análisis multivariado, construcción de índices y segmentación que permitan identificar diferentes perfiles de vulnerabilidad.
 
-1. **No supervisado:** construir un score de vulnerabilidad soberana externa y segmentar países por perfiles de riesgo.
-2. **Supervisado:** estimar la probabilidad de un evento de distress proxy a 12 meses.
-3. **Reglas de negocio:** traducir ambos resultados a un semáforo y una watchlist operativa.
+El segundo componente buscará estimar la probabilidad de que un país experimente un episodio de *distress* durante los siguientes 12 meses. Se utilizarán modelos de clasificación supervisada, siempre que los datos históricos permitan definir los eventos de manera consistente y se cuente con suficientes observaciones para entrenar y evaluar los modelos.
 
-Este enfoque es preferible a un único modelo porque aprovecha el valor de los datos incluso cuando los eventos extremos son escasos.
+Los resultados de ambos componentes se integrarán en un sistema de alertas que permita identificar países prioritarios y consultar los principales factores asociados con su clasificación. La evaluación incluirá comparaciones con modelos de referencia y pruebas sobre períodos históricos no utilizados durante el entrenamiento, para reducir el riesgo de obtener resultados artificialmente optimistas.
 
 ### Posibilidad de apoyo e implementación
 
-La solución sería apoyable por una organización como el BID porque su salida es interpretable, actualizable y accionable. La herramienta no exige integración costosa ni bases propietarias para un MVP. Sin embargo, hay limitantes visibles:
+La herramienta se plantea como un prototipo académico orientado al seguimiento del riesgo soberano. Su desarrollo utilizará fuentes públicas y herramientas de análisis de datos, por lo que no requiere inicialmente acceso a sistemas internos de una organización.
 
-- el stakeholder real no está disponible durante el curso y debe simularse;
-- las etiquetas de distress pueden ser raras;
-- la utilidad final dependerá de la capacidad del producto para explicar por qué un país fue clasificado en cierto nivel de riesgo.
+El BID se considera una entidad de referencia por su relación con el financiamiento y el desarrollo económico de América Latina. No obstante, la utilidad de la herramienta para sus procesos específicos tendría que evaluarse posteriormente con especialistas de la institución.
 
-En síntesis, la accesibilidad de datos y métodos es suficiente para continuar, siempre que el problema se reformule de manera realista.
+La implementación inicial se concentrará en demostrar que es posible integrar los indicadores, evaluar la vulnerabilidad de los países y generar alertas comprensibles. El componente predictivo estará sujeto a la disponibilidad de información histórica suficiente y a los resultados de su validación. Por tanto, el proyecto no contempla automatizar decisiones de financiamiento ni reemplazar las evaluaciones de riesgo realizadas por expertos.
 
 ---
 
