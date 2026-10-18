@@ -51,7 +51,11 @@ La oportunidad seleccionada fue la **Idea 2**, ya que ofrece un mejor equilibrio
 
 ### Descripción de la oportunidad
 
-Un banco multilateral de desarrollo monitorea de manera continua el entorno macroeconómico y soberano de los países con los que trabaja. Cuando aparecen señales de presión externa, deterioro de reservas, encarecimiento de la deuda o eventos de atrasos, el costo de reaccionar tarde es alto: el análisis se vuelve más reactivo, la priorización entre países se vuelve discrecional y los comités reciben información menos comparable. La oportunidad consiste en crear una herramienta que organice el monitoreo con un criterio homogéneo y anticipatorio.
+Para un banco multilateral de desarrollo como el Banco Interamericano de Desarrollo (BID), conocer la situación económica y financiera de los países es importante para evaluar los riesgos asociados con sus operaciones de financiamiento. Sin embargo, un país puede presentar señales de vulnerabilidad mucho antes de enfrentar dificultades para cumplir con sus obligaciones de deuda. Identificar estas señales y entender cómo se relacionan con episodios históricos de dificultades de pago puede aportar información valiosa para el seguimiento del riesgo soberano.
+
+El Banco Mundial dispone de información histórica sobre deuda externa, reservas internacionales, servicio de deuda y otros indicadores macroeconómicos. Estos datos ofrecen la posibilidad de estudiar las condiciones que caracterizan a los países más vulnerables y analizar qué variables han estado asociadas con episodios de dificultades de pago.
+
+A partir de esta información, el proyecto propone desarrollar una herramienta que permita evaluar la vulnerabilidad soberana externa de los países y estimar el riesgo de que experimenten episodios de *distress*. La intención es que ambos análisis se complementen y ayuden a identificar qué países requieren mayor atención, cuáles son los factores que explican las alertas y dónde conviene profundizar el análisis económico.
 
 ### Retos principales
 
