@@ -318,23 +318,23 @@ La solución tendrá un alcance académico y utilizará información pública. S
 
 ## Propuesta concreta de solución y herramienta
 
-La solución final del capstone se concibe como una **herramienta de priorización soberana** con tres salidas integradas:
+Se desarrollará una herramienta de alerta temprana con tres componentes:
 
-1. **Score anual de vulnerabilidad soberana externa**, construido con componentes de liquidez, servicio de deuda, costo financiero, refinanciamiento, estabilidad macro y capacidad institucional.
-2. **Probabilidad anual de distress a 12 meses**, generada por un clasificador supervisado entrenado con etiquetas proxy.
-3. **Semáforo ampliado y watchlist mensual**, que combine score, probabilidad y señales recientes de tipo de cambio / reservas.
+1. **Índice de vulnerabilidad soberana externa:** evaluará las condiciones económicas y financieras de los países mediante indicadores de deuda, reservas internacionales, servicio de deuda y refinanciamiento.
+2. **Modelo predictivo de distress:** estimará la probabilidad de dificultades de pago en los siguientes 12 meses, siempre que los datos históricos permitan entrenarlo y validarlo.
+3. **Sistema de alertas:** integrará los resultados anteriores en un semáforo que permita comparar países, identificar factores de riesgo y priorizar su seguimiento.
 
-### Etiquetas sugeridas del semáforo
+### Niveles de alerta
 
-| Etiqueta | Interpretación |
+| Nivel | Interpretación |
 |---|---|
-| Verde | Estabilidad relativa y baja prioridad |
-| Amarillo | Vigilancia preventiva |
-| Naranja | Deterioro relevante y seguimiento reforzado |
-| Rojo | Alta vulnerabilidad o alta probabilidad de distress |
-| Negro | Distress observado o activación de evento proxy |
+| Verde | Vulnerabilidad relativamente baja |
+| Amarillo | Señales que requieren vigilancia preventiva |
+| Naranja | Vulnerabilidad elevada y seguimiento reforzado |
+| Rojo | Riesgo elevado que requiere análisis prioritario |
+| Negro | Episodio de distress observado según la definición adoptada |
 
-Esta estructura permite responder dos preguntas distintas pero complementarias: **qué países están estructuralmente más frágiles** y **qué países muestran mayor probabilidad de deterioro severo en el siguiente año**.
+Los niveles se establecerán mediante criterios transparentes, definidos y evaluados durante el desarrollo del proyecto. Las alertas no representan una declaración de incumplimiento ni sustituyen el análisis de especialistas.
 
 ---
 
