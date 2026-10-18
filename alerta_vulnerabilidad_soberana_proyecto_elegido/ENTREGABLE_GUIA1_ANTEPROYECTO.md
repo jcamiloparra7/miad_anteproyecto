@@ -75,12 +75,15 @@ La herramienta no pretende reemplazar el criterio de los especialistas en riesgo
 
 ### Recursos disponibles
 
-El proyecto cuenta con cuatro tipos de recursos razonables:
+Para desarrollar el proyecto se han identificado los siguientes recursos:
 
-- **Datos públicos** del Banco Mundial accesibles por WBGAPI.
-- **Capacidad analítica** del equipo para construir modelos de series panel, clasificación y segmentación.
-- **Infraestructura técnica ligera**, suficiente para construir un MVP reproducible.
-- **Contexto académico** que permite trabajar con un stakeholder simulado, aun si no se tiene acceso directo a un usuario real.
+- **Fuentes de información**: se utilizarán bases de datos públicas del Banco Mundial, principalmente los Indicadores del Desarrollo Mundial (WDI) y las Estadísticas de Deuda Internacional (IDS). Estas fuentes contienen información histórica sobre deuda externa, reservas internacionales, servicio de deuda y otras variables macroeconómicas. Durante la etapa de exploración será necesario verificar su cobertura, consistencia y utilidad para identificar episodios de distress.
+
+- **Equipo de trabajo**: el proyecto será desarrollado por cuatro estudiantes de la Maestría en Inteligencia Analítica de Datos de la Universidad de los Andes. El equipo aplicará conocimientos de estadística, procesamiento de datos y aprendizaje automático para construir y evaluar los componentes analíticos de la solución.
+
+- **Herramientas tecnológicas**: se contempla utilizar Python y sus librerías de análisis de datos y modelado estadístico, junto con GitHub para el control de versiones y la colaboración entre los integrantes. La solución se desarrollará inicialmente como un prototipo académico, sin requerir infraestructura empresarial.
+
+- **Acompañamiento académico**: el proyecto contará con las orientaciones y criterios de evaluación del curso Gerencia de Proyectos de Analytics. El BID se considera una organización de referencia para definir el caso de uso, pero no se cuenta con su participación ni con acceso a sus procesos internos.
 
 ### Tiempo estimado
 
