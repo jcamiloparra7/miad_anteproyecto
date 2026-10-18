@@ -154,6 +154,11 @@ La implementación inicial se concentrará en demostrar que es posible integrar 
 
 ### Replanteamiento del problema
 
+La idea inicial del proyecto consistía en desarrollar un sistema de alerta temprana de deterioro macroeconómico. Sin embargo, este enfoque abarcaba diferentes tipos de crisis y no permitía establecer con suficiente claridad qué evento se quería anticipar ni qué decisiones se apoyarían con los resultados.
+
+Por esta razón, se decidió concentrar el análisis en la vulnerabilidad soberana externa y el riesgo de episodios de dificultades de pago (*distress*). El proyecto tendrá dos componentes: uno orientado a evaluar las condiciones económicas y financieras que pueden hacer más vulnerable a un país, y otro dirigido a identificar patrones históricos que permitan estimar el riesgo de dificultades de pago en los siguientes 12 meses.
+
+Ambos resultados se integrarán en una herramienta de seguimiento que permita comparar países, identificar señales de deterioro y establecer prioridades de análisis. Este alcance mantiene el propósito preventivo de la propuesta original, pero lo vincula con un problema económico más específico y con resultados que pueden evaluarse mediante indicadores concretos.
 El problema se replantea desde una versión demasiado amplia o financieramente ambiciosa hacia una formulación más factible:
 
 > **Desarrollar una herramienta híbrida de alerta temprana que combine técnicas no supervisadas y supervisadas para clasificar países según su vulnerabilidad soberana externa y estimar su probabilidad de distress, generando un semáforo ampliado para priorizar monitoreo y revisión de exposición.**
@@ -167,16 +172,25 @@ Esta reformulación mejora la factibilidad porque:
 
 ### Limitantes del proyecto
 
-1. **Sin pricing de mercado:** no se puede afirmar mispricing de bonos soberanos sin yields, spreads o CDS.
-2. **Etiquetas proxy:** distress no equivale a default formal; se aproxima mediante atrasos, reprogramaciones y alivios.
-3. **Desbalance de clases:** los eventos severos serán menos frecuentes que los años sin distress.
-4. **Heterogeneidad entre países:** incluso entre emergentes comparables, siempre existirán diferencias institucionales y estructurales.
-5. **Implementación parcial:** el MVP puede apoyar priorización, pero no reemplaza el juicio experto.
+El desarrollo del proyecto presenta algunas limitaciones que deben considerarse desde su formulación:
+
+1. **Disponibilidad de información:** la cobertura histórica y la frecuencia de actualización de los indicadores no son iguales para todos los países. Esto puede reducir el número de observaciones disponibles y afectar las comparaciones.
+
+2. **Identificación de eventos de distress:** los atrasos, las reprogramaciones y los alivios de deuda no representan necesariamente un incumplimiento formal. Será necesario establecer criterios para definir estos eventos y evaluar la consistencia de los registros históricos.
+
+3. **Frecuencia de los eventos:** las dificultades graves de pago son relativamente poco frecuentes. Si el número de eventos identificados es insuficiente, la capacidad para entrenar y validar un modelo predictivo será limitada.
+
+4. **Diferencias entre países:** las condiciones económicas, institucionales y financieras varían entre las economías analizadas. Por ello, los resultados deben interpretarse teniendo en cuenta estas diferencias y evitando asumir que una misma combinación de indicadores tiene idénticas implicaciones en todos los países.
+
+5. **Alcance de la solución:** el proyecto no contempla determinar si la deuda soberana está sobrevalorada o subvalorada en los mercados financieros, ni automatizar decisiones de financiamiento. La herramienta se orientará al diagnóstico y seguimiento del riesgo soberano.
 
 ### Decisión metodológica derivada de los limitantes
 
-Como consecuencia, el semáforo final no debe depender exclusivamente del clasificador supervisado. Debe salir de una lógica híbrida donde el score estructural, la probabilidad de distress y las señales mensuales se combinen en una regla de decisión transparente.
+La herramienta se diseñará de manera que el análisis de vulnerabilidad soberana externa pueda funcionar de forma independiente del modelo predictivo. Esto permitirá disponer de un diagnóstico comparativo de los países incluso si la información histórica no resulta suficiente para estimar probabilidades de *distress* con un nivel aceptable de confiabilidad.
 
+Si los datos permiten desarrollar ambos componentes, sus resultados se utilizarán conjuntamente para construir un sistema de alertas. Las reglas de clasificación deberán ser transparentes y permitir identificar qué indicadores contribuyen a la evaluación de cada país.
+
+La selección definitiva de los modelos y los criterios de alerta se realizará después de evaluar la calidad de los datos y comparar los resultados con métodos de referencia.
 ---
 
 ## Parte V. Beneficios esperados
