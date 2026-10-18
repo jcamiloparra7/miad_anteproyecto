@@ -67,7 +67,11 @@ Finalmente, la herramienta debe ofrecer resultados que puedan interpretarse desd
 
 ### Prioridad de negocio
 
-La prioridad más importante de esta oportunidad es **mejorar la anticipación y la consistencia del monitoreo soberano**. El proyecto no pretende reemplazar al analista país, sino darle una capa sistemática de priorización y una narrativa comparable entre países.
+La principal prioridad del proyecto es contribuir a la identificación temprana de países que podrían enfrentar dificultades para atender sus obligaciones de deuda externa. Para ello, se propone combinar el análisis de sus condiciones macroeconómicas y financieras con modelos que permitan reconocer patrones asociados con episodios históricos de *distress*.
+
+Esta información permitiría diferenciar países que presentan vulnerabilidades estructurales de aquellos que, además, muestran señales de un posible deterioro en el corto plazo. Con estos resultados, una entidad como el BID podría contar con elementos adicionales para decidir dónde concentrar sus esfuerzos de seguimiento, qué situaciones requieren un análisis más profundo y cuáles deberían recibir atención prioritaria.
+
+La herramienta no pretende reemplazar el criterio de los especialistas en riesgo soberano, sino aportar evidencia que complemente sus evaluaciones y facilite decisiones de monitoreo más consistentes.
 
 ### Recursos disponibles
 
