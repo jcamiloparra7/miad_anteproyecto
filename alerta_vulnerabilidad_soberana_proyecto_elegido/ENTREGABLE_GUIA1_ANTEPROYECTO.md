@@ -197,28 +197,41 @@ La selección definitiva de los modelos y los criterios de alerta se realizará 
 
 ### Métrica de negocio
 
-La principal métrica de negocio es la capacidad de la herramienta para **capturar tempranamente los países que luego exhiben señales de distress dentro del grupo priorizado para seguimiento**. En términos operativos, esto puede expresarse como el porcentaje de eventos contenidos en el 25% superior del ranking de riesgo.
+El principal beneficio esperado es mejorar la capacidad para identificar anticipadamente países que podrían experimentar dificultades en el cumplimiento de sus obligaciones de deuda externa.
+
+Para evaluar este beneficio se medirá qué proporción de los eventos históricos de *distress* queda incluida entre los países clasificados con mayor prioridad de seguimiento. En particular, se analizará la capacidad del sistema para concentrar estos eventos en el 25 % superior del ranking de riesgo.
+
+Esta medida permitirá evaluar si la herramienta aporta información útil para priorizar el monitoreo, comparando sus resultados con los de un modelo de referencia basado en indicadores económicos tradicionales.
 
 ### Beneficios cualitativos
 
-- estandarización del monitoreo entre analistas y equipos país;
-- trazabilidad de por qué un país fue escalado;
-- mejor preparación de discusiones en comité;
-- reducción del sesgo puramente discrecional.
+La herramienta podría aportar los siguientes beneficios:
+
+- **Mayor capacidad de anticipación:** identificar señales de vulnerabilidad antes de que se materialicen episodios graves de dificultades de pago.
+- **Mejor comprensión del riesgo soberano:** reconocer qué indicadores económicos y financieros están asociados con los niveles de vulnerabilidad de cada país.
+- **Comparabilidad:** utilizar criterios consistentes para analizar países con diferentes condiciones macroeconómicas y financieras.
+- **Priorización del seguimiento:** identificar los países que requieren mayor atención y aquellos donde conviene profundizar el análisis.
+- **Trazabilidad:** disponer de información que permita comprender y documentar las razones detrás de cada alerta.
+
+Estos beneficios corresponden a capacidades esperadas de la solución. Su utilidad en procesos institucionales reales requeriría una validación posterior con usuarios especializados.
 
 ### Beneficios cuantitativos propuestos
 
-| Beneficio | Métrica propuesta | Situación actual estimada | Meta inicial |
-|---|---|---:|---:|
-| Captura temprana de señales | % de eventos proxy capturados en top 25% del ranking | No medido | >= 70% |
-| Rapidez operativa | Días hábiles para actualizar watchlist | 20 | <= 5 |
-| Cobertura analítica | % de países priorizados con explicación de drivers | 0% | 100% |
-| Eficiencia de monitoreo | % del universo total que requiere monitoreo intensivo | 100% manual / no priorizado | 20%-30% priorizado |
+| Beneficio | Indicador | Línea base | Meta propuesta |
+|---|---|---|---|
+| Identificación temprana de eventos | Recall@top 25 % del ranking | Por establecer con modelo base | ≥70 %, sujeto a validación |
+| Calidad de las alertas | Precisión y tasa de falsas alarmas | Por establecer | Mejorar frente al modelo base |
+| Interpretabilidad | % de países priorizados con explicación de sus principales indicadores | No implementado | 100 % |
+| Cobertura del diagnóstico | % de países seleccionados con evaluación de vulnerabilidad | Por establecer tras exploración | 100 % del universo final viable |
+| Capacidad predictiva | PR-AUC del modelo supervisado | Por establecer | Superior al modelo base |
 
 ### Beneficio para el stakeholder
 
-El valor para el BID no estaría solo en “predecir” eventos extremos, sino en **usar mejor la capacidad analítica y reducir monitoreo reactivo**. Esto es importante porque, incluso si los eventos severos son escasos, la organización sigue necesitando una lógica consistente para decidir dónde profundizar análisis.
+Para una entidad multilateral como el BID, el valor potencial de la herramienta estaría en contar con información adicional para evaluar la vulnerabilidad soberana externa y reconocer señales que puedan anticipar dificultades de pago.
 
+Al combinar el diagnóstico de las condiciones económicas y financieras con un análisis predictivo, sería posible distinguir países que presentan debilidades estructurales de aquellos que también muestran patrones asociados con episodios de *distress*. Esta información podría contribuir a definir prioridades de seguimiento y orientar análisis más detallados por parte de los especialistas.
+
+El beneficio esperado no consiste en sustituir los modelos o procedimientos que actualmente utilice la institución, sino en explorar una herramienta complementaria cuya capacidad analítica pueda evaluarse con información histórica.
 ---
 
 ## Parte VI. Criterios de éxito
