@@ -1,0 +1,21 @@
+economy,country_name,coverage_core_pct,coverage_external_pct,coverage_full_pct
+BRA,Brazil,100.0,100.0,98.7
+SLV,El Salvador,100.0,100.0,98.7
+COL,Colombia,100.0,100.0,98.7
+PER,Peru,99.0,99.2,96.8
+MEX,Mexico,100.0,100.0,94.2
+GTM,Guatemala,100.0,100.0,92.3
+HTI,Haiti,100.0,100.0,91.0
+PRY,Paraguay,100.0,100.0,91.0
+DOM,Dominican Republic,100.0,100.0,91.0
+ECU,Ecuador,100.0,100.0,91.0
+HND,Honduras,100.0,100.0,91.0
+BOL,Bolivia,100.0,100.0,91.0
+NIC,Nicaragua,99.0,99.2,90.4
+JAM,Jamaica,100.0,90.9,88.5
+ARG,Argentina,93.8,95.5,84.6
+URY,Uruguay,100.0,81.8,83.3
+GUY,Guyana,100.0,90.9,83.3
+CRI,Costa Rica,100.0,81.8,75.6
+CHL,Chile,100.0,81.8,75.6
+PAN,Panama,87.5,72.7,67.9

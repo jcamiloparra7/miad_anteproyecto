@@ -1,0 +1,16 @@
+indicator_code,source_id,source_name,group_name,label,indicator_name,business_use,coverage_lac20_pct,coverage_lac14_debt_pct,coverage_comp8_pct
+NY.GDP.MKTP.KD.ZG,2,WDI,core_anual,Crecimiento del PIB,GDP growth (annual %),Pulso del ciclo económico y desaceleración.,100.0,100.0,100.0
+FP.CPI.TOTL.ZG,2,WDI,core_anual,Inflación,"Inflation, consumer prices (annual %)",Presión de precios y estabilidad macro.,97.5,100.0,100.0
+BN.CAB.XOKA.GD.ZS,2,WDI,core_anual,Cuenta corriente (% PIB),Current account balance (% of GDP),Desequilibrio externo.,100.0,100.0,100.0
+FI.RES.TOTL.CD,2,WDI,core_anual,Reservas internacionales,"Total reserves (includes gold, current US$)",Colchón externo ante choques.,100.0,100.0,100.0
+SL.UEM.TOTL.ZS,2,WDI,core_anual,Desempleo,"Unemployment, total (% of total labor force) (modeled ILO estimate)",Deterioro del mercado laboral.,100.0,100.0,100.0
+BX.KLT.DINV.WD.GD.ZS,2,WDI,core_anual,IED neta (% PIB),"Foreign direct investment, net inflows (% of GDP)",Dependencia de flujos de capital.,100.0,100.0,100.0
+FM.LBL.BMNY.GD.ZS,2,WDI,core_anual,Dinero amplio (% PIB),Broad money (% of GDP),Profundidad monetaria y liquidez.,94.2,98.8,97.9
+GOV_WGI_GE.SC,3,WGI,core_anual,Government effectiveness,Government Effectiveness - Governance score (0-100),Capacidad institucional para gestionar choques.,100.0,100.0,100.0
+NE.EXP.GNFS.ZS,2,WDI,extension_externa,Exportaciones (% PIB),Exports of goods and services (% of GDP),Apertura externa y sensibilidad al ciclo global.,90.0,100.0,100.0
+DT.DOD.DECT.GN.ZS,2,WDI,extension_externa,Deuda externa (% GNI),External debt stocks (% of GNI),Carga de deuda externa.,80.0,100.0,100.0
+DT.TDS.DECT.EX.ZS,2,WDI,extension_externa,Servicio de deuda (% exportaciones),"Total debt service (% of exports of goods, services and primary income)",Presión de servicio de deuda externa.,80.0,100.0,100.0
+GFDD.DI.01,32,GFD,extension_financiera,Crédito privado (% PIB),Private credit by deposit money banks to GDP (%),Profundidad financiera doméstica.,81.7,83.3,83.3
+GC.DOD.TOTL.GD.ZS,2,WDI,extension_fiscal,Deuda del gobierno central (% PIB),"Central government debt, total (% of GDP)",Espacio fiscal; útil pero con cobertura baja.,30.4,33.3,36.5
+DPANUSLCU,15,GEM,monitoreo_mensual,Tipo de cambio oficial (LCU/USD),"Official exchange rate, LCU per USD, period average,,",Seguimiento mensual de presión cambiaria.,,,
+TOTRESV,15,GEM,monitoreo_mensual,Reservas totales,"Total Reserves,,,,",Seguimiento mensual de liquidez externa.,,,

@@ -1,0 +1,4 @@
+universe,n_countries,countries,avg_core_pct,avg_external_pct,avg_full_pct
+lac20,20,"ARG, BOL, BRA, CHL, COL, CRI, DOM, ECU, GTM, HND, HTI, JAM, MEX, NIC, PAN, PER, PRY, SLV, URY, GUY",99.0,94.7,88.7
+lac14_debt,14,"BLZ, BOL, BRA, COL, DOM, ECU, GTM, HND, HTI, MEX, NIC, PER, PRY, SLV",99.9,99.9,93.5
+comp8,8,"EGY, IDN, MAR, PHL, THA, TUR, VNM, ZAF",99.8,99.8,93.7
