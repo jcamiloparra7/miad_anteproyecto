@@ -1,0 +1,7 @@
+indicator_code,indicator_name,business_use,completeness_pct,latest_year_with_80pct_coverage
+SL.TLF.CACT.FE.ZS,"Labor force participation rate, female (% of female population ages 15+) (modeled ILO estimate)",Variable objetivo del caso.,100.0,2023
+SL.UEM.TOTL.FE.ZS,"Unemployment, female (% of female labor force) (modeled ILO estimate)",Condición de inserción laboral femenina.,100.0,2023
+SP.DYN.TFRT.IN,"Fertility rate, total (births per woman)",Proxy de presiones de cuidado y fecundidad.,100.0,2023
+SE.SEC.CMPT.LO.FE.ZS,"Lower secondary completion rate, female (% of relevant age group)",Capital humano femenino acumulado.,85.0,2022
+IT.NET.USER.ZS,Individuals using the Internet (% of population),Inclusión digital como habilitador de acceso al empleo.,100.0,2023
+SP.POP.1564.TO.ZS,Population ages 15-64 (% of total population),Tamaño relativo de la población en edad de trabajar.,100.0,2023

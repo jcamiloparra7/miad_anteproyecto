@@ -1,0 +1,7 @@
+indicator_code,indicator_name,business_use,completeness_pct,latest_year_with_80pct_coverage
+EG.ELC.ACCS.ZS,Access to electricity (% of population),Cobertura base del servicio eléctrico.,100.0,2023
+EG.CFT.ACCS.ZS,Access to clean fuels and technologies for cooking (% of population),Acceso a tecnologías limpias de cocción; aproxima pobreza energética doméstica.,100.0,2023
+EG.ELC.ACCS.RU.ZS,"Access to electricity, rural (% of rural population)","Permite aislar la brecha rural, crítica para focalización.",100.0,2023
+SP.RUR.TOTL.ZS,Rural population (% of total population),Contexto demográfico de ruralidad.,100.0,2023
+NY.GDP.PCAP.CD,GDP per capita (current US$),Proxy de capacidad económica y asequibilidad.,100.0,2023
+EG.FEC.RNEW.ZS,Renewable energy consumption (% of total final energy consumption),Complementa la viabilidad desde la matriz energética y sostenibilidad.,83.3,2021

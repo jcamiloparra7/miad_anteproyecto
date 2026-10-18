@@ -1,0 +1,7 @@
+indicator_code,indicator_name,business_use,completeness_pct,latest_year_with_80pct_coverage
+NY.GDP.MKTP.KD.ZG,GDP growth (annual %),Captura desaceleración o contracción económica.,100.0,2023
+FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",Mide presión inflacionaria y pérdida de estabilidad de precios.,95.0,2023
+GC.DOD.TOTL.GD.ZS,"Central government debt, total (% of GDP)",Proxy de espacio fiscal y sostenibilidad de deuda.,34.2,
+BN.CAB.XOKA.GD.ZS,Current account balance (% of GDP),Resume desequilibrios externos.,100.0,2023
+FI.RES.TOTL.CD,"Total reserves (includes gold, current US$)",Señal de colchón externo para enfrentar choques.,100.0,2023
+SL.UEM.TOTL.ZS,"Unemployment, total (% of total labor force) (modeled ILO estimate)",Mide deterioro del mercado laboral.,100.0,2023

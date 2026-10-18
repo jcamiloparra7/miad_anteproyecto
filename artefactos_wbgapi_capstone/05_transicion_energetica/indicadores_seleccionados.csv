@@ -1,0 +1,7 @@
+indicator_code,indicator_name,business_use,completeness_pct,latest_year_with_80pct_coverage
+EG.FEC.RNEW.ZS,Renewable energy consumption (% of total final energy consumption),Participación renovable en consumo final.,83.3,2021
+EN.GHG.CO2.PC.CE.AR5,Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),Huella per cápita de CO2 asociada a la estructura energética.,100.0,2023
+EG.EGY.PRIM.PP.KD,Energy intensity level of primary energy (MJ/$2021 PPP GDP),Eficiencia energética agregada.,87.5,2021
+EG.ELC.RNEW.ZS,Renewable electricity output (% of total electricity output),Participación renovable en la generación eléctrica.,83.3,2021
+EG.USE.PCAP.KG.OE,Energy use (kg of oil equivalent per capita),Intensidad de uso energético por habitante.,100.0,2023
+NY.GDP.PCAP.CD,GDP per capita (current US$),Capacidad económica para financiar transición.,100.0,2023
