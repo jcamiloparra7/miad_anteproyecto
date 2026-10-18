@@ -1,75 +1,88 @@
-# CARTA PROYECTO
+# CARTA DEL PROYECTO
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| **Título del Proyecto** | Sistema híbrido de alerta temprana de vulnerabilidad soberana externa y riesgo de distress | | |
-| **Encargado del Proyecto** | Equipo capstone MIAD | **Asesor proyecto** | Por definir |
-| **Fecha de Aprobación** | 2026-10-18 | **Última Revisión** | 2026-10-18 |
+| Campo | Información |
+|---|---|
+| **Título** | Sistema híbrido de alerta temprana de vulnerabilidad soberana externa y riesgo de distress |
+| **Responsables** | Equipo de estudiantes MIAD |
+| **Asesor** | Por definir |
+| **Fecha de elaboración** | 18 de octubre de 2026 |
+| **Estado** | Propuesta académica pendiente de aprobación |
 
-#### Necesidades de la Compañía
+## 1. Necesidades de la organización
 
-| | | |
-| :--- | :--- | :--- |
-| **Contexto** | El Banco Interamericano de Desarrollo (BID) opera en un entorno donde el monitoreo macroeconómico y soberano de países miembros es crítico para priorizar análisis, conversación con contrapartes y revisión de exposición. El seguimiento actual puede ser reactivo, heterogéneo entre equipos y poco trazable frente a episodios de presión externa. | |
+**Contexto:** El Banco Interamericano de Desarrollo (BID) es una institución multilateral que financia proyectos y programas en América Latina y el Caribe. El seguimiento de las condiciones económicas y financieras de los países es relevante para evaluar su vulnerabilidad externa y los riesgos asociados con el cumplimiento de sus obligaciones de deuda.
 
-#### Planteamiento del Problema
+## 2. Planteamiento del problema
 
-| | | |
-| :--- | :--- | :--- |
-| **Clientes / Stakeholders** | **Primario:** unidad de riesgo soberano / exposición país del BID. **Secundarios:** equipos país, comité de riesgo, tesorería y estrategia macro-financiera. | |
+**Stakeholder principal:** Equipos de análisis macroeconómico y riesgo soberano de una entidad multilateral como el BID.
 
-**Problema de negocio**  
-La organización necesita una herramienta analítica que permita anticipar qué países presentan mayor vulnerabilidad soberana externa y mayor probabilidad de distress, para enfocar monitoreo intensivo, profundización del análisis y revisión de exposición de manera oportuna y consistente.
+**Stakeholders secundarios:** Equipos país, áreas de gestión de riesgos y comités de seguimiento.
 
-#### CTQ (Factores Críticos de Satisfacción)
+**Problema de negocio:** La evaluación del riesgo soberano requiere analizar conjuntamente indicadores de deuda externa, reservas internacionales, servicio de deuda y otras variables macroeconómicas. El proyecto busca aprovechar esta información para identificar países con mayor vulnerabilidad y reconocer patrones que puedan anticipar episodios de dificultades de pago (*distress*).
 
-1. **Oportunidad:** el resultado debe actualizarse con frecuencia y llegar antes del deterioro visible en comité.
-2. **Interpretabilidad:** cada alerta debe mostrar qué variables explican el nivel de riesgo.
-3. **Comparabilidad:** el score debe permitir comparar países y seguir su evolución.
-4. **Cobertura:** la solución debe apoyarse en datos públicos con suficiente consistencia histórica.
-5. **Accionabilidad:** el producto debe traducirse en una watchlist y un semáforo operativo.
+### Requisitos críticos de calidad (CTQ)
 
-#### Key Business Drivers (Variables del negocio)
+1. **Anticipación:** Identificar señales de riesgo antes de los eventos definidos como *distress*.
+2. **Interpretabilidad:** Explicar los principales indicadores asociados con cada alerta.
+3. **Comparabilidad:** Aplicar criterios consistentes entre países y períodos.
+4. **Calidad de datos:** Documentar fuentes, cobertura y limitaciones.
+5. **Utilidad:** Generar alertas que permitan priorizar el seguimiento.
 
-- Exposición soberana y riesgo país.
-- Capacidad analítica disponible para monitoreo.
-- Oportunidad del escalamiento a comité.
-- Vulnerabilidad de liquidez externa y refinanciamiento.
-- Trazabilidad de decisiones de seguimiento y revisión.
+### Variables de negocio
 
----
+- Vulnerabilidad soberana externa.
+- Riesgo de dificultades de pago.
+- Exposición y servicio de deuda externa.
+- Liquidez internacional y necesidades de refinanciamiento.
+- Priorización del monitoreo del riesgo soberano.
 
-### PROYECTO
+## 3. Objetivo del proyecto
 
-| Objetivo del Proyecto | Diseñar una herramienta híbrida de alerta temprana que combine score estructural, clasificación supervisada y reglas de negocio para priorizar países con mayor vulnerabilidad soberana externa y riesgo de distress. | | | |
-| :--- | :--- | :--- | :--- | :--- |
-| **Métricas** | **Descripción** | **Valor Actual** | **Valor Objetivo** | |
-| Captura temprana de eventos | % de eventos proxy contenidos en el 25% superior del ranking de riesgo | No medido | >= 70% | |
-| Tiempo de actualización | Días hábiles para actualizar watchlist y semáforo | 20 días aprox. | <= 5 días | |
-| Cobertura explicativa | % de países priorizados con drivers identificables y ficha analítica | 0% | 100% | |
-| Consistencia del monitoreo | % de países revisados con criterios homogéneos | Bajo / no estandarizado | >= 90% | |
+Desarrollar una herramienta de alerta temprana que permita evaluar la vulnerabilidad soberana externa de países emergentes y estimar el riesgo de episodios de dificultades de pago, mediante indicadores macroeconómicos y financieros y técnicas de análisis de datos, para apoyar la identificación de señales de deterioro y la priorización del seguimiento del riesgo soberano.
 
-| Alcance del Proyecto | Construcción de un MVP anual para países del universo `lac14_debt`, benchmarking con `comp8`, y una capa mensual de seguimiento para países priorizados usando tipo de cambio y reservas. |
-| :--- | :--- |
+## 4. Métricas y metas
 
-| Beneficios | |
-| :--- | :--- |
-| Operativos | Priorización objetiva del esfuerzo analítico y reducción de monitoreo reactivo. |
-| Estratégicos | Mejor trazabilidad para revisión de exposición, diálogo con equipos país y preparación de comité. |
-| Analíticos | Score comparable, clasificación de distress y seguimiento mensual de alertas. |
+| Métrica | Línea base | Meta propuesta |
+|---|---|---|
+| Captura de eventos en el 25 % superior del ranking | Por establecer | ≥70 %, sujeto a validación |
+| Desempeño predictivo (PR-AUC) | Modelo de referencia | Superar el modelo base |
+| Explicación de alertas | No implementado | 100 % de países priorizados |
+| Cobertura del diagnóstico | Por establecer | 100 % del universo final viable |
+| Calidad de alertas | Por establecer | Evaluar precisión y falsas alarmas |
 
-#### Planeación
+Las metas predictivas dependerán de la cantidad y calidad de eventos históricos disponibles.
 
-| Actividades | Fechas | Nombre / Rol | Responsables Rev |
-| :--- | :--- | :--- | :--- |
-| **Definir** | Semanas 1-2 | Equipo capstone / líder de proyecto | Sponsor académico / stakeholder simulado |
-| **Medir** | Semanas 3-4 | Científico de datos / analista económico | Líder técnico |
-| **Analizar** | Semanas 5-7 | Científico de datos / modelador | Líder técnico y stakeholder |
-| **Mejorar** | Semanas 8-10 | Equipo capstone | Comité de proyecto |
-| **Controlar** | Semanas 11-12 | Equipo capstone / analista de negocio | Stakeholder y asesor |
+## 5. Alcance
 
-| Restricciones | |
-| :--- | :--- |
-| Datos | No se incluyen precios de bonos, CDS ni spreads soberanos homogéneos, por lo que el proyecto no cubre pricing de mercado. |
-| Etiquetas | Los eventos de distress proxy pueden ser escasos y desbalanceados. |
-| Implementación | El stakeholder es simulado para fines académicos; las métricas actuales deberán validarse al contrastar con un usuario real. |
+**Incluye:** Integración de datos públicos del Banco Mundial; análisis de vulnerabilidad soberana externa; construcción de un índice comparativo; evaluación de un modelo predictivo de *distress* a 12 meses, sujeto a viabilidad; y desarrollo de un sistema de alertas con visualización de resultados.
+
+El universo inicial contempla países de América Latina y economías emergentes de referencia. Su composición definitiva se establecerá según la cobertura de los datos.
+
+**Excluye:** Valoración de bonos soberanos, predicción garantizada de incumplimientos y automatización de decisiones de financiamiento.
+
+## 6. Beneficios esperados
+
+- **Analíticos:** Identificar perfiles de vulnerabilidad y patrones asociados con dificultades de pago.
+- **Operativos:** Facilitar la comparación de países y la priorización de alertas.
+- **Estratégicos:** Aportar evidencia para orientar análisis preventivos del riesgo soberano.
+
+## 7. Planeación
+
+| Fase DMAIC | Semanas | Actividad principal | Responsable |
+|---|---|---|---|
+| Definir | 1–2 | Delimitar el problema, los países y los criterios de *distress* | Equipo MIAD |
+| Medir | 3–4 | Recopilar y evaluar datos históricos | Equipo MIAD |
+| Analizar | 5–7 | Construir índice y evaluar modelos predictivos | Equipo MIAD |
+| Mejorar | 8–10 | Integrar resultados y desarrollar alertas | Equipo MIAD |
+| Controlar | 11–12 | Validar, documentar y entregar la herramienta | Equipo MIAD |
+
+Las responsabilidades específicas se distribuirán entre los cuatro integrantes según las actividades del proyecto.
+
+## 8. Restricciones y supuestos
+
+- La disponibilidad histórica de datos varía entre países e indicadores.
+- Los eventos utilizados como aproximación al *distress* no equivalen necesariamente a incumplimientos formales.
+- La viabilidad del componente predictivo dependerá de contar con suficientes eventos históricos.
+- El proyecto se desarrollará en 12 semanas con herramientas y datos públicos.
+- El BID es una organización de referencia y no un patrocinador confirmado.
+- La herramienta será un prototipo académico y no reemplazará la evaluación de especialistas.
