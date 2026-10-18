@@ -59,7 +59,11 @@ A partir de esta información, el proyecto propone desarrollar una herramienta q
 
 ### Retos principales
 
-Los retos más importantes son cuatro. El primero es que el distress soberano formal es poco frecuente, por lo que las etiquetas supervisadas son escasas y desbalanceadas. El segundo es que no todas las variables fiscales tienen buena cobertura, lo que obliga a centrar el alcance en vulnerabilidad externa y no en una visión fiscal exhaustiva. El tercero es que el stakeholder debe recibir una herramienta interpretable, no una caja negra. El cuarto es que la solución debe ser útil incluso cuando no se materializa un evento extremo, pues gran parte del valor radica en la priorización de vigilancia.
+Uno de los principales retos del proyecto es la disponibilidad y calidad de la información histórica. Aunque existen indicadores económicos y financieros para distintos países, no todos tienen la misma cobertura ni se actualizan con la misma frecuencia. Esto puede limitar las comparaciones y exigir ajustes en la selección de variables y países incluidos en el análisis.
+
+Otro desafío es la identificación de episodios de *distress* soberano. Las dificultades graves de pago no ocurren con frecuencia y, además, no todos los eventos registrados representan necesariamente un incumplimiento formal de deuda. Por esta razón, será necesario definir con precisión qué situaciones se considerarán eventos de *distress* y verificar si existen suficientes observaciones históricas para desarrollar y evaluar un modelo predictivo.
+
+Finalmente, la herramienta debe ofrecer resultados que puedan interpretarse desde una perspectiva económica. No basta con clasificar países según su nivel de vulnerabilidad o asignarles una probabilidad de *distress*: también es importante comprender qué indicadores influyen en cada resultado y cómo esa información puede contribuir a priorizar el seguimiento del riesgo soberano.
 
 ### Prioridad de negocio
 
